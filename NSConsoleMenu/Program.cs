@@ -6,11 +6,11 @@ namespace NSConsoleMenu
     {
         static void Main(string[] args)
         {
-            const string commandHi = "1";
-            const string commandBye = "2";
-            const string commandRandomNumber = "3";
-            const string commandClearConsole = "4";
-            const string commandExit = "5";
+            const string CommandHi = "1";
+            const string CommandBye = "2";
+            const string CommandRandomNumber = "3";
+            const string CommandClearConsole = "4";
+            const string CommandExit = "5";
 
             Random random = new Random();
             bool isWork = true;
@@ -19,32 +19,32 @@ namespace NSConsoleMenu
 
             while (isWork)
             {
-                Console.WriteLine($"Введите {commandHi}, чтобы вывести приветствие.");
-                Console.WriteLine($"Введите {commandBye}, чтобы вывести прощание.");
-                Console.WriteLine($"Введите {commandRandomNumber}, чтобы вывести случайное число.");
-                Console.WriteLine($"Введите {commandClearConsole}, чтобы очистить консоль.");
-                Console.WriteLine($"Введите {commandExit}, чтобы завершить работу.");
+                Console.WriteLine($"Введите {CommandHi}, чтобы вывести приветствие.");
+                Console.WriteLine($"Введите {CommandBye}, чтобы вывести прощание.");
+                Console.WriteLine($"Введите {CommandRandomNumber}, чтобы вывести случайное число.");
+                Console.WriteLine($"Введите {CommandClearConsole}, чтобы очистить консоль.");
+                Console.WriteLine($"Введите {CommandExit}, чтобы завершить работу.");
                 string userInput = Console.ReadLine();
 
                 switch (userInput)
                 {
-                    case commandHi:
+                    case CommandHi:
                         Console.WriteLine("Привет!");
                         break;
 
-                    case commandBye:
+                    case CommandBye:
                         Console.WriteLine("Прощай...");
                         break;
 
-                    case commandRandomNumber:
+                    case CommandRandomNumber:
                         Console.WriteLine(random.Next(randomMinValue, randomMaxValue));
                         break;
 
-                    case commandClearConsole:
+                    case CommandClearConsole:
                         Console.Clear();
                         break;
 
-                    case commandExit:
+                    case CommandExit:
                         isWork = false;
                         break;
 
