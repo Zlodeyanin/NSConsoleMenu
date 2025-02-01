@@ -31,18 +31,23 @@ namespace NSConsoleMenu
                     case commandHi:
                         Console.WriteLine("Привет!");
                         break;
+
                     case commandBye:
                         Console.WriteLine("Прощай...");
                         break;
+
                     case commandRandomNumber:
                         Console.WriteLine(random.Next(randomMinValue, randomMaxValue));
                         break;
+
                     case commandClearConsole:
                         Console.Clear();
                         break;
+
                     case commandExit:
                         isWork = false;
                         break;
+
                     default:
                         Console.WriteLine("Такого пункта в меню нет.");
                         break;
